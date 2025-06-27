@@ -32,7 +32,7 @@ class AffineTransform:
         )
 
     def apply_to_rect(self, rect: Rect):
-        return self.apply_to_point(
+        return self.apply_to_polygon(
             rect.to_polygon()
         )
     
@@ -75,3 +75,6 @@ class AffineTransform:
             shx = -self.shx / denom,
             shy = -self.shy / denom
         )
+    
+    def __str__(self):
+        return f'sx {self.sx}, sy {self.sy}, shx {self.shx}, shy {self.shy}, tx {self.tx}, ty {self.ty}'
