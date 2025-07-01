@@ -30,5 +30,9 @@ class StructureSolution:
 
         if node.is_loaded:
             forces.append(node.net_load.opposite())
+
+        return reduce(operator.add, forces)
+    
+    
         
 
