@@ -1,0 +1,1 @@
+type apps\truss_structures\baltimore.txt | truss.bat --scale=0.75 --disp-scale=5500 --load-scale=0.2

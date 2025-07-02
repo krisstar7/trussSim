@@ -1,0 +1,1 @@
+type apps\truss_structures\warren.txt | truss.bat --scale=1.25 --disp-scale=400 --load-scale=0.01
