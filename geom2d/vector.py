@@ -85,3 +85,10 @@ class Vector:
         
     def __str__(self):
         return f'({self.u}, {self.v}) with norm {self.norm}'
+    
+    def to_formatted_str(self, decimals: int):
+        u = round(self.u, decimals)
+        v = round(self.v, decimals)
+        norm = round(self.norm, decimals)
+
+        return f'({u}, {v}) with norm {norm}'

@@ -15,7 +15,7 @@ def segment(seg: Segment, attributes=()):
         .replace('{{x1}}', str(seg.start.x)) \
         .replace('{{y1}}', str(seg.start.y)) \
         .replace('{{x2}}', str(seg.end.x)) \
-        .replace('{{y2}}', str(seg.end.x)) \
+        .replace('{{y2}}', str(seg.end.y)) \
         .replace('{{attrs}}', attrs_to_str(attributes)) 
 
 def rectangle(rect: Rect, attributes=()):

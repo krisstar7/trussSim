@@ -35,3 +35,9 @@ class Point:
     
     def __str__(self):
         return f'({self.x}, {self.y})'
+    
+    def to_formatted_str(self, decimals: int):
+        x = round(self.x, decimals)
+        y = round(self.y, decimals)
+
+        return f'({x}, {y})'

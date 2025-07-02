@@ -20,7 +20,7 @@ class StrNodeSolution:
     
     @property
     def is_constrained(self):
-        return self.__original_node.dx or self.__original_node.dy_constrained
+        return self.__original_node.dx_constrained or self.__original_node.dy_constrained
     
     @property
     def loads(self):
